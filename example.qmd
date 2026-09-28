@@ -1,0 +1,51 @@
+---
+title: "Example"
+filters:
+  - code-language-labels
+format:
+  html: default
+  revealjs:
+    output-file: example-slides.html
+---
+
+## Executed chunk
+
+```{r}
+x <- 1 + 1
+x
+```
+
+## Plain fences
+
+```python
+y = 2
+```
+
+```julia
+z = 3;
+```
+
+```bash
+quarto add d-morrison/code-language-labels
+```
+
+```yaml
+filters:
+  - d-morrison/code-language-labels
+```
+
+## Opting out
+
+```{.python .no-language-label}
+# no label on this block
+```
+
+```{.r filename="analysis.R"}
+# the filename header replaces the label
+```
+
+## Unlabelled
+
+```
+plain text, no language, no label
+```
