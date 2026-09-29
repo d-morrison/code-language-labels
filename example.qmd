@@ -34,6 +34,12 @@ filters:
   - d-morrison/code-language-labels
 ```
 
+```qmd
+::: {.callout-note}
+A Quarto source snippet.
+:::
+```
+
 ## Opting out
 
 ```{.python .no-language-label}

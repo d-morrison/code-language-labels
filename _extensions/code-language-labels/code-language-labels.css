@@ -3,7 +3,9 @@
  * plain fences alike, and a bare <pre> for chunk output, so only code gets a
  * label. A language missing from the map below simply gets no label. */
 
-pre.sourceCode::before {
+pre.sourceCode::before,
+pre.qmd::before,
+pre.quarto::before {
   display: block;
   font-size: 0.8em;
   font-family: var(--bs-font-sans-serif, sans-serif);
@@ -29,6 +31,10 @@ pre.sourceCode.json::before { content: "JSON"; }
 pre.sourceCode.toml::before { content: "TOML"; }
 pre.sourceCode.markdown::before,
 pre.sourceCode.md::before { content: "Markdown"; }
+/* Pandoc does not highlight Quarto source, so these fences render as a bare
+ * <pre class="qmd"> with no sourceCode class. */
+pre.qmd::before,
+pre.quarto::before { content: "Quarto"; }
 pre.sourceCode.latex::before,
 pre.sourceCode.tex::before { content: "LaTeX"; }
 pre.sourceCode.html::before { content: "HTML"; }
