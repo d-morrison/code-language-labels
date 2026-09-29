@@ -46,6 +46,10 @@ A Quarto source snippet.
 # no label on this block
 ```
 
+```{.qmd .no-language-label}
+Quarto source with its label hidden.
+```
+
 ```{.r filename="analysis.R"}
 # the filename header replaces the label
 ```
