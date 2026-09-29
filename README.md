@@ -17,6 +17,9 @@ Nothing is written into the page per block.
 quarto add d-morrison/code-language-labels
 ```
 
+If you vendor the extension by copying files instead, copy the whole
+`_extensions/code-language-labels/` directory, including its `LICENSE`.
+
 ## Usage
 
 Add it to `_quarto.yml` to label every page in a project:
